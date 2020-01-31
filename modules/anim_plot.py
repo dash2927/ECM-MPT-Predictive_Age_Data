@@ -72,9 +72,9 @@ def rotate_3d(df, x, y, z, save_file=True):
         df_P28_pred = df[df['predicted'] == 2]
         df_P35_pred = df[df['predicted'] == 3]
 
-        rot_animation = animation.FuncAnimation(fig, rotate, init_func=init, frames=np.arange(0,362,2),interval=50, repeat=True)
+        rot_animation = animation.FuncAnimation(fig, rotate, init_func=init, frames=np.arange(0,407,2),interval=50, repeat=True)
         if save_file:
-            rot_animation.save(f'./rotation_{x}_{y}_{z}.html'.replace(' ', ''), dpi=80, writer=HTMLWriter())
+            rot_animation.save(f'./gif_rotation_{x}_{y}_{z}.gif'.replace(' ', ''), writer='imagemagick', fps=20)
         # Close plot if using %matplotlib inline
         pl.close()
     return rot_animation
