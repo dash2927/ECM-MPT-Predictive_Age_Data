@@ -15,4 +15,7 @@ Brain extracellular matrix (ECM) structure mediates many aspects of neuronal fun
 ### [Analysis 02 - Observing prediciton of age in three separate categories (P14, P21/P28, P35) using XGBoost](https://github.com/dash2927/ECM-MPT-Predictive_Age_Data/blob/master/analysis_P21_P28_combined.ipynb)
 ### Images
 
+---
+
+## Methods:
 
